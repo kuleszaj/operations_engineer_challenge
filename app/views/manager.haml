@@ -1,0 +1,16 @@
+.mapping_creation
+  %h2 Create a Mapping
+  %form#shortener
+    .input
+      %label#url_label{ for: 'url' } URL (e.g. http://www.google.com)
+      %br
+      %input#url{ type: 'text', name: 'url', size: 60 }
+    .input
+      %label#tag_label{ for: 'tag' } Tag (optional, e.g. jobs)
+      %br
+      %input#tag{ type: 'text', name: 'tag', size: 60 }
+    .input
+      %input#submit{ type: 'submit', value: 'Shorten' }
+.mapping_listing
+  %h2 Existing Mappings
+  %table.display#list

@@ -1,0 +1,31 @@
+html, body { font-family:sans-serif; background:#eee; margin:0; padding:0; color:#000 }
+h1,h2,h3,h4,h5,h6 { border-bottom:1px solid #aaa; margin:1em 0 0.5em 0 }
+h1#title { background:#333; margin-top:0; color:#ccc; padding:0.1em 0.5em; font-size:105% }
+#content { margin:1em 2em }
+.navigation { background-color: #474D57; font-size:larger; font-family:sans-serif; border-bottom:1px solid #aaa; }
+.navigation .logo { vertical-align:middle; }
+.navigation .logo img { width: 60px; height: 60px; }
+.navigation a { text-decoration: none; color: white}
+.navigation a:hover, .navigation a:focus { text-decoration: none; color: white}
+.navigation div { display: inline-block; margin: 5px; }
+fieldset { border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-style: groove; border-right-style: groove; border-bottom-style: groove; border-left-style: groove; margin-top:4px; margin-bottom:4px; }
+div.dataTables_wrapper { margin-top: 15px; }
+div.flash { margin: 20px 20px -10px 20px; padding: 10px; border-width:1px; border-style: solid; display: inline-block; }
+div.validation { margin: 20px; padding: 10px; border-width:1px; border-style: solid; display: block; width: 300px; text-align: center; }
+div#notice{ color: green; border-color: green; }
+div#notice a { color: green; border-color: green; }
+div#error{ color: red; border-color: red; }
+div.validation_error { margin: 20px 20px 0px 20px; padding: 10px; border-width:1px; border-style: solid; color: red; border-color: red; }
+a:hover, a:focus { color: #265A6B; text-decoration: underline }
+a { color: #3A89A3; text-decoration: none; }
+div.panel { float:left; margin-right: 20px; }
+.prominent { font-weight: bold; }
+ul { padding-left: 20px; }
+.hidden { display: none; }
+.ui-widget{ font-size: 0.8em }
+span#statsquestion{ font-size: 14px }
+div.submit{ text-align: center; }
+.submit input { font-size: 16px; }
+div.mapping_creation div.input { margin: 10px; }
+div.mapping_creation div.input input { margin-top: 5px; }
+td.delete { text-align: center; }

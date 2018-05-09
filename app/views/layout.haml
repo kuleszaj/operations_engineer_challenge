@@ -1,0 +1,22 @@
+!!! XML
+!!! 1.1
+%html{ lang: 'en', xmlns: 'http://www.w3.org/1999/xhtml' }
+  %head
+    %title URL Shortener
+    %meta{ name: 'robots', content: 'noindex, nofollow' }
+    %link{ rel: 'stylesheet', type: 'text/css', href: '/css/application.css' }
+    %link{ rel: 'stylesheet', type: 'text/css', href: '//cdn.datatables.net/1.10.7/css/jquery.dataTables.css' }
+    %script{ type: 'text/javascript', charset: 'utf8', src: '//code.jquery.com/jquery-1.10.2.min.js' }
+    %script{ type: 'text/javascript', charset: 'utf8', src: '//cdn.datatables.net/1.10.7/js/jquery.dataTables.js' }
+    %script{ type: 'text/javascript', charset: 'utf8', src: '/js/application.js' }
+  %body{ id:@action }
+    .navigation
+      .logo
+        %a{ href: "/manager" }
+          %img{ src: '/AtomicLogo.png' }
+      .shortener
+        %a{ href: "/manager" } URL Shortener
+    - %w[notice error warning alert info].each do |key|
+      - if flash[key]
+        %div{ id: key, class: 'flash' }= flash[key]
+    #content= yield
