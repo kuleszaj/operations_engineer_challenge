@@ -25,9 +25,9 @@ Specific information about completing the challenge.
 
 ### Expectations
 
-We expect to drop your file(s) into the repository, and run "docker-compose -f path/to/docker-compose.yml up".
+We expect to drop your file(s) into the repository, and run `docker-compose -f path/to/docker-compose.yml up`.
 
-If we run something like "curl -I http://localhost:3000/test", we expect to get a redirect like:
+If we run something like `curl -I http://localhost:3000/test`, we expect to get a redirect like:
 
 ```
 HTTP/1.1 301 Moved Permanently
