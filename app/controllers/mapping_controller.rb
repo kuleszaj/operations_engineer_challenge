@@ -73,7 +73,6 @@ end
 
 # Internally redirect to /mapping/:tag
 get %r{\A\/([0-9A-Za-z]{1,16})\z} do
-  status, headers, body = call env.merge('PATH_INFO': \
-    "/mappings/#{params['captures'].first}")
+  status, headers, body = call env.merge(PATH_INFO: "/mappings/#{params['captures'].first}")
   [status, headers, body.map(&:upcase)]
 end
