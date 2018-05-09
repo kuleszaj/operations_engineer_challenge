@@ -8,7 +8,7 @@ group :production do
 
   # Webserver
   gem 'thin', '~> 1.7.0'
-  gem 'nokogiri', '~> 1.6.8'
+  gem 'nokogiri', '~> 1.8.2'
 
   # MySQL2 driver
   gem 'mysql2'
@@ -18,8 +18,8 @@ group :production do
   gem 'sinatra-contrib'
 
   # Active Record
-  gem 'activesupport'
-  gem 'activerecord'
+  gem 'activesupport', '~> 4.2.7.1'
+  gem 'activerecord', '~> 4.2.7.1'
 
   # Hash generation
   gem 'digest-murmurhash'
@@ -46,6 +46,6 @@ end
 
 group :development do
   gem 'pry'
-  gem 'rubocop'
+  gem 'rubocop', '~> 0.49.0'
   gem 'rerun'
 end
